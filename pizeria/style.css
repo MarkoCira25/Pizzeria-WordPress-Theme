@@ -1,0 +1,414 @@
+/*
+Theme Name: Pizzeria
+Theme URI:
+AuthorL Marko Cirovic
+Authot URI:
+Description: Theme for Restaraunts
+Version:1.0
+Licenses: GNU General Public Licenses v2 or later
+Licenses URI: http://www/gnu.org/Licenses/glp-2.0.html
+Tags:  restaurant, mobile fist, resposive, Pizzeria
+Text Domain: Pizzeria
+
+*/
+html {
+  box-sizing: border-box;
+  font-family: 'Open Sans', sans-serif;
+
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+h1, h2, h3, h4, h5{
+  font-family: 'Raleway', sans-serif;
+  font-weight: 900;
+}
+h1 {
+  font-size: 48px;
+}
+h2{
+  font-size: 40px;
+}
+h3 {
+  font-size: 28px;
+}
+h4 {
+  font-size: 24px;
+}
+
+.clear, .clear:after {
+
+    content: '';
+    clear: both;
+    display: block;
+
+}
+.container {
+  max-width: 1100px;
+  width: 100%;
+  margin: 0 auto;
+}
+.sr-text {
+  display: block;
+}
+
+.text-center {
+    text-align: center;
+}
+/* Header */
+header.site-header {
+
+  border-bottom:  1px solid #c1c1c1;
+  padding-bottom: 30px;
+}
+div.logo {
+  text-align: center;
+
+}
+@media only screen and (min-width: 768px){
+    div.logo {
+      text-align: left;
+ }
+}
+@media only screen and (min-width: 992px){
+    div.logo {
+      text-align: center;
+ }
+}
+img.logoimage {
+  width: 250px;
+}
+
+@media only screen and (min-width: 992px) {
+    header.site-header .container {
+      position: relative;
+
+ }
+ header.site-header .header-information {
+   position: absolute;
+   top: 0;
+   right: 0;
+ }
+}
+
+div.address {
+  display: block;
+  clear: top;
+  padding-top: 10px;
+}
+div.address p {
+  margin: 0;
+  font-size: 14px;
+  text-align: center;
+}
+
+@media only screen and (min-width: 768px){
+    div.address p {
+      text-align: right;
+ }
+}
+
+
+nav.socials1 ul {
+  list-style: none;
+  text-align: center;
+  padding: 0;
+  font-size: 30px;
+}
+@media only screen and (min-width: 768px){
+  nav.socials1 ul {
+    float: right;
+    }
+}
+
+nav.menu-social-menu-container ul li {
+  position: relative;
+  display: inline-block;
+  }
+/*Mein menu */
+
+nav.site-nav {
+  display: none;
+}
+@media only screen and (min-width: 768px){
+  nav.site-nav {
+    display: block;
+  }
+}
+nav.site-nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  display: table;
+}
+
+@media only screen and (min-width: 768px) {
+  nav.site-nav ul li {
+    display: table-cell;
+    width: 1%;
+  }
+}
+nav.site-nav ul li a{
+  text-align: center;
+  padding: 20px 0;
+  display: block;
+  font-weight: bold;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: black;
+  font-family: 'Raleway', sans-serif
+
+}
+nav.site-nav ul li a:hover{
+  border-bottom: 5px solid #a61206;
+}
+
+/* responsive menu */
+@media only screen and (max-width: 767px){
+    .mobile-menu a {
+      height: 40px;
+      line-height: 40px;
+      background-color: #a61206;
+      width: 100%;
+      display: block;
+      color: white;
+      text-align: center;
+      text-decoration: none;
+      font-size: 20px;
+      text-transform: uppercase;
+      font-family: 'Raleway', sans-serif
+      }
+}
+@media only screen and (min-width: 768px) {
+  .mobile-menu a  {
+    display: none;
+  }
+}
+
+/*hero image*/
+
+.hero {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  height: 450px;
+  display: table;
+  margin: 0 auto;
+  text-align: center;
+  width: 100%;
+  position: relative;
+}
+
+.hero::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,.5);
+}
+
+.hero .hero-content{
+  display: table-cell;
+  vertical-align: middle;
+  color: #ffffff;
+  z-index: 2;
+  position: relative;
+}
+@media only screen and (min-width:768px) {
+  .hero-text {
+    width: 80%;
+    margin:0 auto;
+
+  }
+}
+@media only screen and (min-width:992px) {
+  .hero-text {
+    width: 60%;
+  }
+}
+
+.main-content {
+  padding: 60px;
+  background-color: #ffffff;
+  position: relative;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+@media only screen and (min-width: 768px){
+  .main-content {
+    margin-top: -90px;
+  }
+}
+
+.content-text p {
+  font-size: 18px;
+  line-height: 50px;
+}
+.box {
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+}
+
+.box-inforamcion {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  display: flex;
+  justify-content:center;
+  vertical-align: middle;
+  flex-wrap: wrap;
+}
+.content-box-one  {
+  margin: 0;
+  padding: 0;
+  width: 300px;
+  height: 400px;
+  background-color: orange;
+  display: inline-block;
+}
+.content-box-two {
+  margin: 0;
+  padding: 0;
+  width: 300px;
+  height: 400px;
+  background-color: green;
+  display: inline-block;
+}
+.content-box-tree {
+  margin: 0;
+  padding: 0;
+  width: 300px;
+  height: 400px;
+  background-color: red;
+  display: inline-block;
+}
+.about-botom-text-red {
+  margin: 0;
+  padding-left: 5px;
+  padding-right: 5px;
+  padding-bottom: 0;
+  text-align: center;
+}
+.about-botom-text {
+  margin: 0;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 0;
+  text-align: center;
+}
+.text-in-red-fild {
+  margin:0;
+  top: -50px;
+  z-index: 2;
+}
+.about-botom-texttree {
+  padding-top: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 15px;
+  text-align: center;
+}
+/*FOOTER*/
+
+footer {
+  margin-top: 30px;
+  padding: 30px 0;
+  border-top: 1px solid #c1c1c1;
+  text-align: center;
+}
+
+footer nav ul {
+  list-style: none;
+}
+footer nav ul li {
+  display: inline;
+}
+footer nav ul li:last-child .separator {
+  display: none;
+}
+
+footer nav ul li a {
+  color: #000000;
+  text-transform: uppercase;
+  font-style: 60px;
+  text-decoration: none;
+}
+footer nav ul li a:hover {
+  font-size: 20px;
+}
+footer .location {
+  margin-top: 30px;
+}
+
+footer p {
+  margin: 0 0 5px 0;
+  font-size: 14px;
+}
+.copyright {
+  margin-top: 20px;
+}
+.hr {
+  margin-top: 30px;
+  padding: 30px 0;
+}
+
+/*reservation*/
+.reservation {
+  background-image: url(img/bg_contact.jpg);
+  background-repeat: no-repeat;
+  background-position: top=left;
+
+}
+@media only screen and (min-width: 768px) {
+  .reservation-info {
+    margin-left: 50%;
+  }
+}
+
+form.reservation-form h2{
+  font-size: 20px;
+  font-weight: 700;
+}
+form.reservation-form .field {
+  margin-bottom: 20px;
+  width: 100%;
+}
+form.reservation-form .field input,
+form.reservation-form .field textarea {
+    width: 100%;
+    border: 3px solid #000000;
+    padding: 15px 10px;
+
+}
+form.reservation-form .field textarea{
+  height: 200px;
+  color: black;
+}
+
+.button {
+  padding: 20px;
+  border-radius: 10px;
+  background-color: darkred;
+
+}
+
+
+/*Hero page*/
+
+.secondary {
+  color: white;
+  text-decoration: none;
+}
+
+.front{
+  height: 650px;
+}
+.front-container {
+  margin: 0;
+}
